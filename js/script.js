@@ -4,8 +4,8 @@ let trains = {
         peoples:10,
         currentStation: 0,
         nextStation: null,
-        currentIndex: 2,
-        direction: 'back',
+        currentIndex: 0,
+        direction: 'forward',
         freeToMove: true,
         railway:{
             name: 'a',
@@ -138,9 +138,9 @@ const init = (trains) => {
     }, 2000);
 
     //stop trains moving
-    setTimeout(function () {
-        clearInterval(interval);
-    }, 20000);
+    // setTimeout(function () {
+    //     clearInterval(interval);
+    // }, 20000);
 
     
 }
